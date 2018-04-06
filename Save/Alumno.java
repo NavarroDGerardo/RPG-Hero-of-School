@@ -1,9 +1,20 @@
 public abstract class Alumno extends Mob{
 	
 	private int xP;
+	public String nombre;
 
-	public Alumno(int promedio, int defensa, int ataque){
+	public Alumno(int promedio, int defensa, int ataque, int xP, String nombre){
 		super(promedio, ataque, defensa);
+		this.xP=xP;
+		this.nombre=nombre;
+	}
+
+	public void setNombre(String nombre){
+		this.nombre = nombre;
+	}
+
+	public String getNombre(){
+		return nombre;
 	}
 
 	public void setXP(int XP){
@@ -14,13 +25,17 @@ public abstract class Alumno extends Mob{
 		return xP;
 	}
 
-	/*public void printXP(){
-		System.out.println("XP: "+xP);
-	}*/
 
 	public abstract void atacar(Mob mob);
 
-	public void printAction(){
-		System.out.println("Un nuevo alumno ha sido creado");
+	public abstract void printAction();
+
+	public void printName(){
+		System.out.println("Su nombre es: " + nombre);
+	}
+
+	public void printXP(){
+		System.out.println("xp: "+xP);
+		System.out.println("");
 	}
 }

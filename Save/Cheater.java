@@ -1,7 +1,7 @@
 public class Cheater extends Alumno{
 	
-	public Cheater(int promedio, int defensa, int ataque){
-		super(promedio, ataque, defensa);
+	public Cheater(int promedio, int defensa, int ataque, int xP, String nombre){
+		super(promedio, ataque, defensa, xP, nombre);
 	}
 
 	public void atacar(Mob mob){
