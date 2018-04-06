@@ -38,11 +38,10 @@ public abstract class Mob implements ActionMob{
 		System.out.println("Promedio: "+promedio);
 		System.out.println("Defensa: "+defensa);
 		System.out.println("Ataque: "+ataque);
-		System.out.println("");
 	}
 
 	public void atacar(Mob mob){
-		mob.setPromedio(mob.getPromedio()-mob.getDefensa());
+		mob.setPromedio(mob.getPromedio()-ataque);
 	}
 
 }

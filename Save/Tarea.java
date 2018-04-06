@@ -5,7 +5,7 @@ public class Tarea extends Enemigo{
 	}
 
 	public void atacar(Mob mob){
-		mob.setPromedio(mob.getPromedio()-mob.getDefensa());
+		mob.setPromedio(mob.getPromedio()-mob.getAtaque());
 	}
 
 	public void printAction(){

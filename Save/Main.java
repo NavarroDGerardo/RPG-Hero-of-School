@@ -1,30 +1,26 @@
 public class Main{
 	public static void main(String args[]){
-		Alumno n=new Normal(50, 660, 805);
+		Alumno n=new Normal(2, 1, 1, 1, "Genos");
 		n.printAction();
+		n.printName();
 		n.printStats();
+		n.printXP();
 
-		Alumno c=new Cheater(50, 78, 50);
-		c.printAction();
-		c.printStats();
-
-		Alumno a=new Aplicado(50, 50, 50);
-		a.printAction();
-		a.printStats();
-
-		Enemigo t=new Tarea(25,1,300);
+		Enemigo t=new Tarea(1,3,1);
 		t.printAction();
 		t.printStats();
+		n.printXP();
 
-		Enemigo p=new Parcial(50, 70, 90);
-		p.printAction();
-		p.printStats();
-
-		Enemigo f=new Final(50, 60, 70);
-		f.printAction();
-		f.printStats();
-
-
+		while(n.getPromedio()>0 && t.getPromedio()>0){
+			n.atacar(t);
+			t.atacar(n);
+			System.out.println(n.getNombre()+" a causado: "+n.getAtaque()+ " de danio al enemigo");
+			System.out.println("la vida del enemigo es: "+t.getPromedio());
+			System.out.println("");
+			System.out.println("El Enemigo a causado: "+t.getAtaque()+ " de danio al Alumno");
+			System.out.println("la vida del Alumno es: "+n.getPromedio());
+			System.out.println("");
+		}
 
 
 	}

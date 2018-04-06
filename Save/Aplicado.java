@@ -1,7 +1,7 @@
 public class Aplicado extends Alumno{
 	
-	public Aplicado(int promedio, int defensa, int ataque){
-		super(promedio, ataque, defensa);
+	public Aplicado(int promedio, int defensa, int ataque, int xP, String nombre){
+		super(promedio, ataque, defensa, xP, nombre);
 	}
 
 	public void atacar(Mob mob){
