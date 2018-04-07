@@ -7,6 +7,7 @@ public abstract class Alumno extends Mob{
 		super(promedio, ataque, defensa);
 		this.xP=xP;
 		this.nombre=nombre;
+		
 	}
 
 	public void setNombre(String nombre){
@@ -24,7 +25,6 @@ public abstract class Alumno extends Mob{
 	public int getXP(){
 		return xP;
 	}
-
 
 	public abstract void atacar(Mob mob);
 
