@@ -1,4 +1,4 @@
-public class ItemEspecialNormal{
+public class ItemEspecialNormal extends item{
 	int objetosEspecialesNormal;
 
 	public objetosEspecialesNormal(int objetosEspecialesNormal){

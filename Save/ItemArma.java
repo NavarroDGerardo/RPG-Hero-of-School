@@ -1,4 +1,4 @@
-public class ItemArma{
+public class ItemArma extends item{
 	int objetosArma;
 
 	public ItemArma(int objetosArma){

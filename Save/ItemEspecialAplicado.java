@@ -1,4 +1,4 @@
-public class ItemEspecialAplicado{
+public class ItemEspecialAplicado extends item{
 	int objetosEspecialesAplicado;
 
 	public objetosEspecialesAplicado(int objetosEspecialesAplicado){

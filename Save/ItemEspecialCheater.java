@@ -1,4 +1,4 @@
-public class ItemEspecialCheater{
+public class ItemEspecialCheater extends item{
 	int objetosEspecialesCheater;
 
 	public objetosEspecialesCheater(int objetosEspecialesCheater){
